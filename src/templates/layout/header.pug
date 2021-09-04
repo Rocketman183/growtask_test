@@ -2,12 +2,12 @@ mixin header()
 	header.header
 		.header__mobile
 			a(href="#"): img(src="../../images/Logo.svg")
-			button: img(src="../../images/icons/menu_button.svg", alt="")
-		.header__desktop
-			ul.header__desktop__menu-items
-				li.header__desktop__menu-items__item: a(href="#") Главная
-				li.header__desktop__menu-items__item: a(href="#") Слайдер
-				li.header__desktop__menu-items__item: a(href="#") Карточки
-				li.header__desktop__menu-items__item: a(href="#") Форма
-				li.header__desktop__menu-items__item: a(href="#") Список
-				li.header__desktop__menu-items__item: a(href="#") Модалка
+			button.toggle: img(src="../../images/icons/menu_button.svg")
+		.header__menu-items
+			ul.header__menu-items__list
+				li.header__menu-items__list__item: a(href="#") Главная
+				li.header__menu-items__list__item: a(href="#") Слайдер
+				li.header__menu-items__list__item: a(href="#") Карточки
+				li.header__menu-items__list__item: a(href="#") Форма
+				li.header__menu-items__list__item: a(href="#") Список
+				li.header__menu-items__list__item: a(href="#") Модалка

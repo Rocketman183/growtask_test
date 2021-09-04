@@ -13,6 +13,7 @@
   },
   "author": "Dmitry Martyashev <dmworksgood@gmail.com>",
   "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
     "gulp": "^4.0.2"
   },
