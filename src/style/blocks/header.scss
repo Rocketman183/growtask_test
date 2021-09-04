@@ -1,0 +1,38 @@
+.header__mobile {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 5% 2%;
+
+	button {
+		background-color: #fff;
+	}
+
+	@media #{$desktop} {
+		display: none;
+	}
+}
+
+.header__desktop {
+	display: none;
+	margin: 2% 333/1920*100%;
+
+	&__menu-items {
+		display: flex;
+		justify-content: space-between;
+		font-family: 'Raleway';
+		font-weight: 400;
+		text-decoration: none;
+		font-size: 24/1920*100vw;
+		&__item {
+			a {
+				color: black;
+			}
+		}
+	}
+
+	@media #{$desktop} {
+		display: block;
+	}
+	
+}
