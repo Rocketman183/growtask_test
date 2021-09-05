@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css" media="all"/>
     <script async="async" src="../js/bundle.js"></script>
@@ -34,12 +35,14 @@
             <h2>Тестовое задание</h2>
           </div><img src="../../images/Modal-pic.png" alt=""/>
           <div class="modal-block__mobile__button">
-            <button>Модальное окно</button>
+            <div id="modal-window-mobile" style="display:none"><img class="modal-img" src="../img/modal_mobile.png"/></div>
+            <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
           </div>
         </div><img src="../../images/Modal-pic2.png" alt=""/>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
       <script src="../js/bundle.js"></script>
     </main>
   </body>

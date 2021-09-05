@@ -6,5 +6,7 @@ mixin modal()
 				h2 Тестовое задание
 			img(src="../../images/Modal-pic.png", alt="")
 			.modal-block__mobile__button
-				button Модальное окно
+				#modal-window-mobile(style='display:none')
+					img(src="../img/modal_mobile.png" ).modal-img
+				button(data-fancybox="dialog" data-src="#modal-window-mobile") Модальное окно
 		img(src="../../images/Modal-pic2.png", alt="")

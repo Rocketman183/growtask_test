@@ -12,12 +12,13 @@
 		@media #{$desktop} {
 			display: none;
 		}
+
 	}
 
 	&__menu-items	{
 
 		display: none;
-		padding: 15% 0 0 0;
+		padding: 15% 0 0 5%;
 		position: absolute;
 		z-index: 2;
 		width: 100vw;
