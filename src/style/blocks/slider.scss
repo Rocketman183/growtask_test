@@ -1,0 +1,34 @@
+.slider {
+	margin-top: 20%;
+	&__header {
+		font-family: 'Stapel';
+		font-size: 32/375*100vw;
+		margin-left: 2%;
+	}
+}
+
+.swiper {
+	margin-top: 10%;
+}
+
+.swiper-slide {
+	img {
+		width: 100vw;
+	}
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: url(../../img/icons/swiper-next.png);
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 10px 13px;
+	line-height: 0;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: url(../../img/icons/swiper-prev.png);
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 10px 13px;
+	line-height: 0;
+}

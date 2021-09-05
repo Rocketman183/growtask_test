@@ -10,6 +10,7 @@
 @import "common/base";
 
 //БЛОКИ ПО БЭМ ИЗ ПАПКИ BLOCKS
-@import "blocks/header.scss";
-@import "blocks/modal.scss";
-@import "blocks/modal-window.scss";
+@import "blocks/header.scss";//Шапка
+@import "blocks/modal.scss";//Блок с модальным оконом
+@import "blocks/modal-window.scss";//Модальное окно
+@import "blocks/slider.scss";//Слайдер
