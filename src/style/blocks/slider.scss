@@ -4,6 +4,11 @@
 		font-family: 'Stapel';
 		font-size: 32/375*100vw;
 		margin-left: 2%;
+
+		@media #{$desktop} {
+			font-size: 64/1920*100vw;
+			margin-left: 333/1920*100%;
+		}
 	}
 }
 
@@ -14,7 +19,24 @@
 .swiper-slide {
 	img {
 		width: 100vw;
+		@media #{$desktop} {
+			height: 70vh;
+			width: 70vw;
+		}
 	}
+}
+
+.swiper-slide-prev,.swiper-slide-next {
+	img {
+		@media #{$desktop} {
+		opacity: 50%;
+		height: 60vh;
+		width: 60vw;
+		transition: 1s;
+		margin-top: 3%;
+		}
+	}
+	
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -23,6 +45,11 @@
 	border-radius: 50%;
 	padding: 10px 13px;
 	line-height: 0;
+
+	@media #{$desktop} {
+		border: 1px solid black;
+		margin-right: 10vw;
+	}
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
@@ -31,4 +58,9 @@
 	border-radius: 50%;
 	padding: 10px 13px;
 	line-height: 0;
+
+	@media #{$desktop} {
+		border: 1px solid black;
+		margin-left: 10vw;
+	}
 }
