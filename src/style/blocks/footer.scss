@@ -18,6 +18,15 @@
 				font-weight: 400;
 				text-decoration: none;
 				font-size: 24/1920*100vw;
+
+				&:hover {
+						color: #F63765;
+						transition: 0.5s;
+				}
+
+				&:active {
+					color: #AD0E35;
+				}
 			}
 		}
 	

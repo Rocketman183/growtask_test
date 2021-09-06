@@ -91,15 +91,6 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide slide-card">
-              <div class="card"><img src="../images/card-img-3.png"/>
-                <div class="card-body">
-                  <h3 class="card-title">Услуга 3 Услуга 3 Услуга 3</h3>
-                  <p class="card-text">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</p>
-                  <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -107,12 +98,12 @@
         <div class="form__main">
           <h1 class="form__header">Форма</h1>
           <h3 class="form__explain">Стандартная форма обратной связи</h3>
-          <form class="form__body">
+          <form class="form__body" action="/email" method="POST">
             <input type="text" name="name" placeholder="Имя *" autocomplete="off" required="required"/>
             <p class="error">Ошибка</p>
             <input type="text" name="phone" placeholder="Телефон *" autocomplete="off" required="required"/>
             <p class="error">Ошибка</p>
-            <textarea type="text" placeholder="Напиши чего хочешь" rows="5"></textarea>
+            <textarea type="text" name="message" placeholder="Напиши чего хочешь" rows="5"></textarea>
             <div class="form__body__buttons">
               <button class="button-submit" type="submit" onclick="clickSumbit">Отправить</button>
               <button>Не отправлять</button>

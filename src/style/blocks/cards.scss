@@ -74,8 +74,7 @@
 @media #{$desktop} {
 	.cards {
 		margin-top: 10%;
-		// width: 90vw;
-		overflow: hidden;
+		width: 95vw;
 		&__header {
 			font-size: $headers-desktop;
 			margin-left: 333/1920*100%;
@@ -90,7 +89,7 @@
 
 	.swiper-cards {
 		width: 100vw;
-		margin-left: 10%;
+		// margin-left: 10%;
 	}
 	.swiper-wrapper.wrapper-cards {
 		width: 100vw;

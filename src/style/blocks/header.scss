@@ -42,6 +42,16 @@
 					font-weight: 400;
 					text-decoration: none;
 					font-size: 24/663*100vh;
+					transition: 0.5s;
+
+					&:hover {
+						color: #F63765;
+						transition: 0.5s;
+					}
+
+					&:active {
+						color: #AD0E35;
+					}
 				}
 
 				@media #{$desktop} {
