@@ -3,6 +3,7 @@ include ./components/modal
 include ./components/slider
 include ./components/cards
 include ./components/form
+include ./components/list
 
 block variables
     - var page_title = 'Growtask';
@@ -21,6 +22,7 @@ block content
     +slider
     +cards
     +form
+    +list
     
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')//- JQUERY
     script(src='https://unpkg.com/swiper/swiper-bundle.min.js')//- SWIPER

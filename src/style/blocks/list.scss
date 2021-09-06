@@ -1,0 +1,49 @@
+.list {
+	&__header {
+		font-family: "Stapel";
+		font-size: $headers-mobile;
+		margin-left: 2%;
+	}
+}
+
+.accordion {
+
+	margin: 5% 5%;
+
+	&-item {
+		background-color: #F0EBEC;
+		margin-bottom: 5%;
+		border: none;
+	}
+
+	&-button {
+		font-family: 'Stapel';
+		font-size: 22/375*100vw;
+		background-color: #F0EBEC;
+
+		&::after {
+			background-size: 2rem;
+			width: 2rem;
+			height: 2rem;
+			background-image: url(../../img/icons/list-open.svg);
+		}
+	}
+
+	&-body {
+		font-family: 'Raleway';
+		font-weight: 400;
+		font-size: $text-mobile;
+		line-height: 160%;
+		background-color: #F9F9F9;
+	}
+}
+
+.accordion-button:not(.collapsed) {
+	color: black;
+	box-shadow: none;
+	background-color: #F9F9F9;
+
+	&::after {
+		background-image: url(../../img/icons/list-open.svg);
+	}
+}
