@@ -99,3 +99,68 @@
 	font-size: 14/375*100vw;
 	display: none;
 }
+
+@media #{$desktop} {
+	.form {
+
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10%;
+		width: 100%;
+		// height: 100vh;
+
+		&-img-mobile {
+			display: none;
+		}
+
+		&-img-1,&-img-2 {
+		display: block;
+		width: 70vw;
+		height: 70vh;
+		}
+
+		&__header {
+			font-size: $headers-desktop;
+		}
+
+		&__explain {
+			font-size: $text-desktop;
+		}
+
+		&__body {
+			font-size: $text-desktop;
+
+			&__buttons {
+				display: flex;
+				flex-direction: row-reverse;
+				justify-content: center;
+
+				button {
+					width: 50%;
+					text-align: start;
+					padding-left: 0;
+				}
+
+				.button-submit {
+					text-align: center !important;
+					padding-left: 10%;
+				}
+
+			}
+		}
+
+		&__main {
+			width: 40%;
+			left: 50%;
+			top: 0;
+			transform: translate(-50%);
+		}
+
+	}
+
+	.error {
+		font-size: 14/1920*100vw;
+	}
+
+	
+}

@@ -11,7 +11,8 @@ mixin form()
 				input(type="text", name="phone", placeholder="Телефон *", autocomplete="off" required)
 				p.error Ошибка
 				textarea(type="text", placeholder="Напиши чего хочешь", rows="5")
-				button(type="submit", onclick='clickSumbit').button-submit Отправить
-				button Не отправлять
+				.form__body__buttons
+					button(type="submit", onclick='clickSumbit').button-submit Отправить
+					button Не отправлять
 
 		img(src="../../images/form-img-2.png").form-img-2

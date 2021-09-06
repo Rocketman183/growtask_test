@@ -61,11 +61,17 @@
 @media #{$desktop} {
 	.cards {
 		margin-top: 10%;
-		width: 100vw;
+		// width: 90vw;
 		overflow: hidden;
 		&__header {
 			font-size: $headers-desktop;
 			margin-left: 333/1920*100%;
+		}
+
+		&__nav {
+			display: flex;
+			justify-content: space-between;
+			width: 90vw;
 		}
 	}
 
@@ -97,5 +103,6 @@
 	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
 		content: none;
 	}
+	
 }
 }
