@@ -10,6 +10,9 @@
 			margin-left: 333/1920*100%;
 		}
 	}
+	@media #{$desktop} {
+		margin-top: 10%;
+	}
 }
 
 .swiper {
@@ -21,7 +24,7 @@
 		width: 100vw;
 		@media #{$desktop} {
 			height: 70vh;
-			width: 70vw;
+			width: 60vw;
 		}
 	}
 }

@@ -1,0 +1,7 @@
+mixin card(cardImg, cardTitle, cardText)
+	.card
+		img(src=cardImg)
+		.card-body
+			h3.card-title #{cardTitle}
+			p.card-text #{cardText}
+			button(data-fancybox="dialog" data-src="#modal-window-mobile") Модальное окно

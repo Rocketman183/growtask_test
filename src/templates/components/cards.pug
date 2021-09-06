@@ -1,0 +1,19 @@
+include ./card
+
+mixin cards()
+	.cards
+		.cards__nav
+			h1.cards__header Карточки
+			.nav-arrows
+				.swiper-button-prev.prev-card
+				.swiper-button-next.next-card
+		.swiper-cards
+			.swiper-wrapper.wrapper-cards
+				.swiper-slide.slide-card
+					+card(cardImg1,cardTitle1,cardText1)
+				.swiper-slide.slide-card
+					+card(cardImg2,cardTitle2,cardText2)
+				.swiper-slide.slide-card
+					+card(cardImg3,cardTitle3,cardText3)
+				.swiper-slide.slide-card
+					+card(cardImg3,cardTitle3,cardText3)

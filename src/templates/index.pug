@@ -1,13 +1,24 @@
 extends ./layout/layout
 include ./components/modal
 include ./components/slider
+include ./components/cards
 
 block variables
     - var page_title = 'Growtask';
+    - var cardImg1 = '../images/card-img-1.png';
+    - var cardImg2 = '../images/card-img-2.png';
+    - var cardImg3 = '../images/card-img-3.png';
+    - var cardTitle1 = 'Услуга 1 Услуга 1';
+    - var cardTitle2 = 'Услуга 2 Услуга 2Услуга 2 Услуга 2 ';
+    - var cardTitle3 = 'Услуга 3 Услуга 3 Услуга 3';
+    - var cardText1 = 'Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание';
+    - var cardText2 = 'Описание Описание Описание Описание ';
+    - var cardText3 = cardText1;
 
 block content
     +modal
     +slider
+    +cards
     
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')//- JQUERY
     script(src='https://unpkg.com/swiper/swiper-bundle.min.js')//- SWIPER

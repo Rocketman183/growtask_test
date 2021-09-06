@@ -1,0 +1,100 @@
+@import 'card.scss';
+
+.cards {
+
+	margin-top: 20%;
+
+	&__header {
+		font-family: 'Stapel';
+		font-size: 32/375*100vw;
+		margin-bottom: 5%;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.nav-arrows {
+	display: flex;
+	align-items: center;
+	margin-right: 10%;
+}
+
+.swiper-cards {
+	width: 100%;
+	margin-left: 5%;
+}
+
+.slide-card {
+	width: 100%;
+	&+.swiper-slide-next {
+		opacity: 50%;
+	}
+}
+
+.wrapper-cards {
+	width: 100%;
+}
+
+.swiper-button-next.next-card {
+	position: relative;
+	top: 0;
+	border: 1px solid black;
+	border-radius: 50%;
+	margin-left: 20%;
+	padding: 0 21px;
+}
+
+.swiper-button-prev.prev-card {
+	position: relative;
+	left: 0;
+	top: 0;
+	margin-right: 5%;
+	border: 1px solid black;
+	border-radius: 50%;
+	padding: 0 21px;
+}
+
+@media #{$desktop} {
+	.cards {
+		margin-top: 10%;
+		width: 100vw;
+		overflow: hidden;
+		&__header {
+			font-size: 64/1920*100vw;
+			margin-left: 333/1920*100%;
+		}
+	}
+
+	.swiper-cards {
+		width: 100vw;
+		margin-left: 10%;
+	}
+	.swiper-wrapper.wrapper-cards {
+		width: 100vw;
+		overflow: hidden;
+		.swiper-slide {
+			img {
+				height: auto;
+			}
+		}
+	}
+
+	.slide-card {
+
+		&+.swiper-slide-next {
+			opacity: 100%;
+			height: auto;
+			width: auto;
+		}
+
+	.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+		content: none !important;
+	}
+	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+		content: none;
+	}
+}
+}

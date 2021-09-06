@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="format-detection" content="telephone=no"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="../css/style.css" media="all"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script async="async" src="../js/bundle.js"></script>
   </head>
   <body>
@@ -50,6 +52,55 @@
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="cards__nav">
+          <h1 class="cards__header">Карточки</h1>
+          <div class="nav-arrows">
+            <div class="swiper-button-prev prev-card"></div>
+            <div class="swiper-button-next next-card"></div>
+          </div>
+        </div>
+        <div class="swiper-cards">
+          <div class="swiper-wrapper wrapper-cards">
+            <div class="swiper-slide slide-card">
+              <div class="card"><img src="../images/card-img-1.png"/>
+                <div class="card-body">
+                  <h3 class="card-title">Услуга 1 Услуга 1</h3>
+                  <p class="card-text">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</p>
+                  <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-card">
+              <div class="card"><img src="../images/card-img-2.png"/>
+                <div class="card-body">
+                  <h3 class="card-title">Услуга 2 Услуга 2Услуга 2 Услуга 2 </h3>
+                  <p class="card-text">Описание Описание Описание Описание </p>
+                  <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-card">
+              <div class="card"><img src="../images/card-img-3.png"/>
+                <div class="card-body">
+                  <h3 class="card-title">Услуга 3 Услуга 3 Услуга 3</h3>
+                  <p class="card-text">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</p>
+                  <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide slide-card">
+              <div class="card"><img src="../images/card-img-3.png"/>
+                <div class="card-body">
+                  <h3 class="card-title">Услуга 3 Услуга 3 Услуга 3</h3>
+                  <p class="card-text">Описание Описание Описание Описание Описание ОписаниеОписание Описание Описание</p>
+                  <button data-fancybox="dialog" data-src="#modal-window-mobile">Модальное окно</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
