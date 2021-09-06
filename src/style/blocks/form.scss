@@ -116,8 +116,8 @@
 
 		&-img-1,&-img-2 {
 		display: block;
-		width: 70vw;
-		height: 70vh;
+		width: 50%;
+		height: 30%;
 		}
 
 		&__header {
@@ -140,13 +140,17 @@
 					width: 50%;
 					text-align: start;
 					padding-left: 0;
+					padding: 2% 10% 2% 5%;
 				}
 
 				.button-submit {
 					text-align: center !important;
 					padding-left: 10%;
 				}
+			}
 
+			input,textarea {
+				padding: 2% 10% 2% 5%;
 			}
 		}
 
@@ -155,6 +159,7 @@
 			left: 50%;
 			top: 0;
 			transform: translate(-50%);
+			padding: 0 5%;
 		}
 
 	}

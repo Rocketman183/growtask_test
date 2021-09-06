@@ -47,3 +47,28 @@
 		background-image: url(../../img/icons/list-open.svg);
 	}
 }
+
+@media #{$desktop} {
+	.list {
+		margin: 10% 15%;
+		&__header {
+			font-size: $headers-desktop;
+		}
+	}
+
+	.accordion {
+
+		&-item {
+			margin-bottom: 1%;
+		}
+
+		&-button {
+			font-size: 26/1920*100vw;
+			height: 10vh;
+		}
+
+		&-body {
+			font-size: 20/1920*100vw;
+		}
+	}
+}
