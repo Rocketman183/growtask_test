@@ -2,11 +2,11 @@
 	margin-top: 20%;
 	&__header {
 		font-family: 'Stapel';
-		font-size: 32/375*100vw;
+		font-size: #{$headers-mobile};
 		margin-left: 2%;
 
 		@media #{$desktop} {
-			font-size: 64/1920*100vw;
+			font-size: #{$headers-desktop};
 			margin-left: 333/1920*100%;
 		}
 	}
@@ -23,7 +23,7 @@
 	img {
 		width: 100vw;
 		@media #{$desktop} {
-			height: 70vh;
+			height: 70%;
 			width: 60vw;
 		}
 	}
@@ -33,7 +33,7 @@
 	img {
 		@media #{$desktop} {
 		opacity: 50%;
-		height: 60vh;
+		height: 60%;
 		width: 60vw;
 		transition: 1s;
 		margin-top: 3%;

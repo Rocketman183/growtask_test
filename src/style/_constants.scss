@@ -1,3 +1,13 @@
 //брейкпоинты
 
 $desktop: screen and (min-width:768px);
+
+//размер шрифта заголовков
+
+$headers-mobile: 32/375*100vw;
+$headers-desktop: 64/1920*100vw;
+
+//размер шрифта текста 16px
+
+$text-mobile: 16/375*100vw;
+$text-desktop: 20/1920*100vw;

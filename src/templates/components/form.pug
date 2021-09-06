@@ -1,0 +1,17 @@
+mixin form()
+	.form
+		img(src="../../images/form-img-1.png").form-img-1
+		img(src="../../images/form-img-mobile.png").form-img-mobile
+		.form__main
+			h1.form__header Форма
+			h3.form__explain Стандартная форма обратной связи
+			form.form__body
+				input(type="text", name="name", placeholder="Имя *", autocomplete="off" required)
+				p.error Ошибка
+				input(type="text", name="phone", placeholder="Телефон *", autocomplete="off" required)
+				p.error Ошибка
+				textarea(type="text", placeholder="Напиши чего хочешь", rows="5")
+				button(type="submit", onclick='clickSumbit').button-submit Отправить
+				button Не отправлять
+
+		img(src="../../images/form-img-2.png").form-img-2

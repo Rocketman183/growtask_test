@@ -2,12 +2,13 @@
 
 .cards {
 
-	margin-top: 20%;
-
+	margin-top: 30%;
+	width: 100vw;
 	&__header {
 		font-family: 'Stapel';
-		font-size: 32/375*100vw;
+		font-size: $headers-mobile;
 		margin-bottom: 5%;
+		margin-left: 2%;
 	}
 
 	&__nav {
@@ -63,7 +64,7 @@
 		width: 100vw;
 		overflow: hidden;
 		&__header {
-			font-size: 64/1920*100vw;
+			font-size: $headers-desktop;
 			margin-left: 333/1920*100%;
 		}
 	}
