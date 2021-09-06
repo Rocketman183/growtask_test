@@ -21,16 +21,16 @@
       <div class="header__menu-items">
         <ul class="header__menu-items__list">
           <li class="header__menu-items__list__item"><a href="#">Главная</a></li>
-          <li class="header__menu-items__list__item"><a href="#">Слайдер</a></li>
-          <li class="header__menu-items__list__item"><a href="#">Карточки</a></li>
-          <li class="header__menu-items__list__item"><a href="#">Форма</a></li>
-          <li class="header__menu-items__list__item"><a href="#">Список</a></li>
-          <li class="header__menu-items__list__item"><a href="#">Модалка</a></li>
+          <li class="header__menu-items__list__item"><a href="#slider">Слайдер</a></li>
+          <li class="header__menu-items__list__item"><a href="#cards">Карточки</a></li>
+          <li class="header__menu-items__list__item"><a href="#form">Форма</a></li>
+          <li class="header__menu-items__list__item"><a href="#list">Список</a></li>
+          <li class="header__menu-items__list__item"><a href="#modal">Модалка</a></li>
         </ul>
       </div>
     </header>
     <main>
-      <div class="modal-block">
+      <div class="modal-block" id="modal">
         <div class="modal-block__mobile">
           <div class="modal-block__mobile__text">
             <h1>GROWTASK</h1>
@@ -43,7 +43,7 @@
         </div><img src="../../images/Modal-pic2.png" alt=""/>
       </div>
       <div class="slider">
-        <h1 class="slider__header">Слайдер</h1>
+        <h1 class="slider__header" id="slider">Слайдер</h1>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="../../images/slider-img1.png" alt=""/></div>
@@ -54,7 +54,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="cards">
+      <div class="cards" id="cards">
         <div class="cards__nav">
           <h1 class="cards__header">Карточки</h1>
           <div class="nav-arrows">
@@ -103,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div class="form"><img class="form-img-1" src="../../images/form-img-1.png"/><img class="form-img-mobile" src="../../images/form-img-mobile.png"/>
+      <div class="form" id="form"><img class="form-img-1" src="../../images/form-img-1.png"/><img class="form-img-mobile" src="../../images/form-img-mobile.png"/>
         <div class="form__main">
           <h1 class="form__header">Форма</h1>
           <h3 class="form__explain">Стандартная форма обратной связи</h3>
@@ -120,7 +120,7 @@
           </form>
         </div><img class="form-img-2" src="../../images/form-img-2.png"/>
       </div>
-      <div class="list">
+      <div class="list" id="list">
         <h1 class="list__header">Список</h1>
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
@@ -153,6 +153,16 @@
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
       <script src="../js/bundle.js"></script>
+      <footer class="footer">
+        <ul class="footer__items">
+          <li class="footer__items__item"><a href="#">Главная</a></li>
+          <li class="footer__items__item"><a href="#slider">Слайдер</a></li>
+          <li class="footer__items__item"><a href="#cards">Карточки</a></li>
+          <li class="footer__items__item"><a href="#form">Форма</a></li>
+          <li class="footer__items__item"><a href="#list">Список</a></li>
+          <li class="footer__items__item"><a href="#modal">Модалка</a></li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>

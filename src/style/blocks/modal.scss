@@ -1,4 +1,5 @@
 .modal-block {
+	margin-top: 20vh;
 	&__mobile {
 		margin-top: 15%;
 		&__text {
@@ -48,6 +49,18 @@
 				border: 1px solid black;
 				background-color: #fff;
 				padding: 2% 5%;
+				transition: 0.5s;
+
+				&:hover {
+					background-color: #F63765;
+					color: #fff;
+					transition: 0.5s;
+				}
+
+				&:active {
+					background-color: #AD0E35;
+					color: #fff;
+				}
 
 				@media #{$desktop} {
 					font-size: 16/1920*100vw;

@@ -1,9 +1,10 @@
 @import 'card.scss';
 
 .cards {
-	display: none;
+	// display: flex;
 	margin-top: 30%;
 	width: 100vw;
+	overflow: hidden;
 	&__header {
 		font-family: 'Stapel';
 		font-size: $headers-mobile;
@@ -14,6 +15,7 @@
 	&__nav {
 		display: flex;
 		justify-content: space-between;
+		width: 100vw;
 	}
 }
 
@@ -21,10 +23,11 @@
 	display: flex;
 	align-items: center;
 	margin-right: 10%;
+	margin-top: 6%;
 }
 
 .swiper-cards {
-	width: 100%;
+	width: 100vw;
 	margin-left: 5%;
 }
 
@@ -35,8 +38,8 @@
 	}
 }
 
-.wrapper-cards {
-	width: 100%;
+.swiper-wrapper.wrapper-cards {
+	width: 100vw;
 }
 
 .swiper-button-next.next-card {
@@ -56,6 +59,16 @@
 	border: 1px solid black;
 	border-radius: 50%;
 	padding: 0 21px;
+}
+
+.prev-card.swiper-button-prev::after {
+	content: url(../../img/icons/swiper-prev.png);
+	border: none;
+}
+
+.next-card.swiper-button-next::after {
+	content: url(../../img/icons/swiper-next.png);
+	border: none;
 }
 
 @media #{$desktop} {
@@ -85,6 +98,7 @@
 		.swiper-slide {
 			img {
 				height: auto;
+				opacity: 1;
 			}
 		}
 	}
@@ -96,13 +110,15 @@
 			height: auto;
 			width: auto;
 		}
-
-	.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-		content: none !important;
 	}
-	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-		content: none;
+	.prev-card.swiper-button-prev::after {
+		content: url(../../img/icons/swiper-next.png);
+		border: none;
+	}
+
+	.next-card.swiper-button-next::after {
+		content: url(../../img/icons/swiper-prev.png);
+		border: none;
 	}
 	
-}
 }

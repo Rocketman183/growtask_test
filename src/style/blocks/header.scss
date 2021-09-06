@@ -1,5 +1,8 @@
 .header {
-	width: 100%;
+	width: 100vw;
+	position: fixed;
+	background-color: #fff;
+	z-index: 100;
 	&__mobile {
 		display: flex;
 		justify-content: space-between;
@@ -68,5 +71,11 @@
 		}
 		}
 		
+	}
+
+	@media #{$desktop} {
+		position: fixed;
+		background-color: #fff;
+		z-index: 100;
 	}
 }

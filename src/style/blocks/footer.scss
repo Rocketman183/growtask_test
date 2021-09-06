@@ -1,0 +1,26 @@
+.footer {
+	display: none;
+}
+
+@media #{$desktop} {
+	.footer {
+		display: block;
+
+		&__items {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 0 16% 3%;
+			
+			a {
+				color: black;
+				font-family: 'Raleway';
+				font-weight: 400;
+				text-decoration: none;
+				font-size: 24/1920*100vw;
+			}
+		}
+	
+}
+}
+
